@@ -8,7 +8,7 @@ export function initialization({ renderer, camera, scene }: Engine) {
   renderer.setSize(window.innerWidth, window.innerHeight);
   document.body.appendChild(renderer.domElement);
 
-  const cameraPosition = new Vector3(5, 2, 0);
+  const cameraPosition = new Vector3(0, 2, 0);
   camera.position.set(...cameraPosition.toArray());
 
   const loaderSky = new CubeTextureLoader();
